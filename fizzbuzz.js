@@ -1,39 +1,39 @@
 const fizzbuzz = (num) => {
   if (typeof num !== "number") {
-    return "Error: the value is not a number"
+    return "Error: the value is not a number";
   }
   if (num === 0) {
-    return num
+    return num;
   }
 
   const divisible = (num, divisor) => {
     if (num % divisor === 0) {
-      return true
+      return true;
     }
-  }
+  };
 
   if (divisible(num, 3) && divisible(num, 5)) {
-    return "fizzbuzz"
+    return "fizzbuzz";
   }
   if (divisible(num, 3)) {
-    return "fizz"
+    return "fizz";
   }
   if (divisible(num, 5)) {
-    return "buzz"
+    return "buzz";
   }
-  return num
-}
+  return num;
+};
 
 const sum = (a, b) => {
-  return a + b
-}
+  return a + b;
+};
 
 const printNumber = (num) => {
   for (let i = 0; i <= num; i++) {
-    console.log(`${i}: ${fizzbuzz(i)}`)
+    console.log(`${i}: ${fizzbuzz(i)}`);
   }
-}
+};
 
 //printNumber(30)
 
-module.exports = { fizzbuzz, sum }
+module.exports = { fizzbuzz, sum };
