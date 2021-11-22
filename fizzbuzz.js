@@ -31,6 +31,7 @@ const sum = (a, b) => {
 const printNumber = (num) => {
   for (let i = 0; i <= num; i++) {
     console.log(`${i}: ${fizzbuzz(i)}`);
+    console.log("new stuff");
   }
 };
 
